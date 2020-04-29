@@ -1,6 +1,8 @@
 package main
 
-import "musicquiz-api/app"
+import (
+	"musicquiz-api/app"
+)
 
 func main() {
 	app.StartApplication()

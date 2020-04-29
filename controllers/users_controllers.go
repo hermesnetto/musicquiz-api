@@ -33,7 +33,7 @@ func HandleCreateUser(c *gin.Context) {
 		c.JSON(restErr.Status, restErr)
 		return
 	}
-	createdUser, err := services.CreateUser(user)
+	createdUser, err := services.CreateUser(&user)
 	if err != nil {
 		c.JSON(err.Status, err)
 		return
